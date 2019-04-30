@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Place Order</title>
+    <link rel="stylesheet" href="src/apply.css">
 </head>
 <body>
+    <header>
+        <h1 class="order-header">Place your order</h1>
+    </header>
+
+    <main>
+        <form id="place-order">
+            <fieldset id="customer-details">
+                <legend>
+                    Customer Details
+                </legend>
+                    <div>
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="phone-number">Phone</label>
+                        <input type="number" name="phone-number" id="phone-number">
+                    </div>
+                    <div>
+                        <p>return customer?</p>
+                        <label for="return-customer">Yes</label>
+                        <input name="return-customer" type="radio" value="yes">
+
+                    </div>
+                    <div>
+                        <label for="return-customer">No</label>
+                        <input name="return-customer" type="radio" value="no">
+                    </div>
+                
+
+            </fieldset>
+
+            <fieldset id="product-details">
+                <legend>
+                    Product Details
+                </legend>
+
+                <p>
+                    <label for="item-number">Item #</label>
+                    <input type="number" name="item-number">
+                </p>
+
+                <p>
+                    <label for="item-description">Item Description</label>
+                </p>
+
+                <p>
+                    <textarea id="text-box" name="item-description"></textarea>
+                </p>
+
+
+            </fieldset>
+
+        </form>
+    </main>
     
 </body>
 </html>
+            

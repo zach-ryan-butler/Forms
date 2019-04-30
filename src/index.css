@@ -1,0 +1,31 @@
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+}
+
+h1 img {
+    margin-right: 20px;
+    height: 5em;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+.home-page {
+    margin-top: 150px;
+    margin-left: 600px;
+}
+
+.have-fun {
+    float: left;
+    width: 10em;
+    margin-right: 50px;
+}
+
+.text {
+    font-size: 1.3em;
+    
+}
+

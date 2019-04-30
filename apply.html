@@ -14,30 +14,28 @@
 
     <main>
         <form id="place-order">
-            <fieldset id="customer-details">
+            <fieldset>
                 <legend>
                     Customer Details
                 </legend>
-                    <div>
-                        <label for="name">Your name</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div>
-                        <label for="phone-number">Phone</label>
-                        <input type="number" name="phone-number" id="phone-number">
-                    </div>
-                    <div>
-                        <p>return customer?</p>
-                        <label for="return-customer">Yes</label>
-                        <input name="return-customer" type="radio" value="yes">
+                <div>
+                    <label for="name">Your name</label>
+                    <input type="text" name="name" id="name">
+                </div>
 
-                    </div>
-                    <div>
-                        <label for="return-customer">No</label>
-                        <input name="return-customer" type="radio" value="no">
-                    </div>
+                <div>
+                    <label for="phone-number">Phone</label>
+                    <input type="number" name="phone-number" id="phone-number">
+                </div>
+
+                <div>
+                    <p>return customer?</p>
+                    <label for="return-customer">Yes</label>
+                    <input name="return-customer" type="radio" value="Yes">
                 
-
+                    <label for="return-customer">No</label>
+                    <input name="return-customer" type="radio" value="No">
+                </div>
             </fieldset>
 
             <fieldset id="product-details">
@@ -45,25 +43,51 @@
                     Product Details
                 </legend>
 
-                <p>
+                <div>
                     <label for="item-number">Item #</label>
                     <input type="number" name="item-number">
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <label for="item-description">Item Description</label>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <textarea id="text-box" name="item-description"></textarea>
-                </p>
+                </div>
 
+                <div>
+                    <label for="price">Unit Price $</label>
+                </div>
 
+                <div>
+                    <input type="number" name="price">
+                </div>
             </fieldset>
+
+            <section>
+                <h2>
+                    Moment of Truth
+                </h2>
+                <button>Submit</button>
+            </section>
 
         </form>
     </main>
-    
+    <script type="module" src="src/apply.js"></script>
 </body>
 </html>
             
+
+                
+                
+
+
+                
+
+            
+
+
+                
+    
+

@@ -12,7 +12,7 @@ test('create product form from data', (assert) => {
         itemNumber: 33,
         itemDescription: 'is good',
         price: 15
-    }
+    };
 
     const formData = new FormData();
     formData.set('name', expected.name);

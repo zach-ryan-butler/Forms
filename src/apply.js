@@ -8,5 +8,4 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
     const orderForm = getOrderForm(formData);
 
-    console.log(orderForm)
 });

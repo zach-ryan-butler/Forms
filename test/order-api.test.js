@@ -4,7 +4,7 @@ const test = QUnit.test;
 test('round-trip order', (assert) => {
     //Arrange
     // Set up your parameters and expectations
-    // const order = { name: 'tester' };
+    const order = { name: 'tester' };
 
     //Act 
     // Call the function you're testing and set the result to a const

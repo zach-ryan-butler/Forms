@@ -9,8 +9,6 @@ const price = document.getElementById('price');
 
 const order = orderApi.get();
 
-console.log(order)
-
 name.textContent = order.name;
 phoneNumber.textContent = order.phoneNumber;
 returnCustomer.textContent = order.returnCustomer;

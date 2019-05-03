@@ -1,4 +1,5 @@
 const orderApi = {
+    key: 'orders',
     save(order) {
         //get our order array
         const orders = orderApi.getAll();
@@ -7,17 +8,23 @@ const orderApi = {
         // serialize to json
         const json = JSON.stringify(orders);
         //save to local storage
-        localStorage.setItem('orders', json);
+        localStorage.setItem(orderApi.key, json);
     },
-    get() {
+    get(name) {
         // use get all to get order
         const orders = orderApi.getAll();
-        // return it
-        return orders[0];
+        //loop through object array 
+        //if order name matches name in array return order
+        for(let i = 0; i < orders.length; i++) {
+            const order = orders[i];
+            if(order.name === name) {
+                return order;
+            } 
+        }
     },
     getAll() {
         // get from local storage
-        const json = localStorage.getItem('orders');
+        const json = localStorage.getItem(orderApi.key);
         // deserialize to object
         let orders = JSON.parse(json);
         if(!orders) {

@@ -1,5 +1,17 @@
 dl {
+    display: grid;
+    grid-template-rows: max-content 1fr;
     font-size: 1.8em;
+    background-color: rgb(189, 185, 185);
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+dd {
+    margin-left: 8px;
 }
 
 dt:after {

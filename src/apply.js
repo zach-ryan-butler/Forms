@@ -10,4 +10,6 @@ form.addEventListener('submit', (event) => {
     const order = getOrderForm(formData);
 
     orderApi.save(order);
+
+    window.location = 'thanks.html';
 });

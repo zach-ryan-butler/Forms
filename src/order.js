@@ -7,7 +7,17 @@ const itemNumber = document.getElementById('item-number');
 const itemDescription = document.getElementById('item-description');
 const price = document.getElementById('price');
 
-const order = orderApi.get();
+// get the order name
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('name');
+
+// get our order from the api
+const order = orderApi.get(id);
+
+// no applicant? head back to home page
+if(!order) {
+    window.location = './';
+}
 
 name.textContent = order.name;
 phoneNumber.textContent = order.phoneNumber;
